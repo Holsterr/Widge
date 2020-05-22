@@ -1,0 +1,66 @@
+body {
+   background-image: url("https://i.pinimg.com/originals/69/66/c9/6966c9b5da83cb2c8346d61629d5b65a.jpg");
+   height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 140px;
+  font-weight: 140;
+  font-family: verdana;
+padding-top: 50px;
+padding-bottom: -100px;
+}
+
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 53px;
+  font-weight: 130;
+  font-family: verdana;
+  top: -50px;
+}
+
+
+div-test{
+  height: 50px;
+  width: 50%;
+  background-color: red;
+  top:-40px;
+}
+
+
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+
+
+
+            #leftbox { 
+            	
+                float:left;  
+           padding-left:80px;
+           padding-top: -50px;
+                width:28%; 
+                height:280px; 
+            } 
+            #middlebox{ 
+                float:left;  
+           
+                width:40%; 
+                height:280px; 
+            } 
+            #rightbox{ 
+                float:right; 
+            
+                width:25%; 
+                height:280px; 
+            } 

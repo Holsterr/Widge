@@ -1,0 +1,115 @@
+<html>
+
+
+<link rel="stylesheet"  href="style.css">
+
+
+
+<head>
+    <title>Greetings</title> 
+</head>
+
+
+
+<body>
+   
+<div>
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML = "<h1>" + h + ":" + m + ":" + s + "</h1>";
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+</div>
+
+<div style = "position:relative; top:-84px;">
+ <label id="lblGreetings"></label>
+
+
+
+
+<script>
+
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs >=05 && hrs <12)
+        greet = 'Good Morning';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = 'Good Afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening';
+    else if (hrs >= 24 && hrs <= 05)
+        greet = 'Go to sleep';
+
+
+
+    document.getElementById('lblGreetings').innerHTML = "<h2>" + greet + "," + " Hollie </h2>";
+
+
+
+
+</script> 
+</div>
+
+
+
+
+
+    <div id = "boxes"> 
+  
+            
+
+            <div id = "leftbox" style = "position:relative; top:-100px;"> 
+              
+<a class="weatherwidget-io" href="https://forecast7.com/en/50d91n1d40/southampton/" data-label_1="SOUTHAMPTON" data-label_2="WEATHER" data-font="Open Sans" data-icons="Climacons Animated" data-days="5" data-basecolor="rgba(39, 39, 39, 0.49)" data-textcolor="#ffffff" data-highcolor="#f6d85c" data-lowcolor="#a2d9f7" data-suncolor="#f6d85c" data-mooncolor="#ffffff" data-cloudcolor="#ffffff" data-cloudfill="#ffffff" data-raincolor="#a2d9f7" data-snowcolor="#ffffff" >SOUTHAMPTON WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+
+
+
+
+            </div>  
+              
+            <div id = "middlebox"> 
+              
+
+
+            </div> 
+              
+            <div id = "rightbox"> 
+             
+
+
+            </div> 
+        </div> 
+
+
+
+
+
+</body>
+
+
+</html>
